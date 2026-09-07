@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* ── LG webOS & Smart TV Focus Rings & OverScan Optimization ── */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #ef4444 !important;
+  outline-offset: 2px;
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.6) !important;
+  transform: scale(1.02);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, outline 0.15s ease;
+}
+
+/* TV Mode Overscan padding for older Smart TV screens */
+.tv-mode-safe-area {
+  padding: env(safe-area-inset-top, 16px) env(safe-area-inset-right, 24px) env(safe-area-inset-bottom, 16px) env(safe-area-inset-left, 24px);
+}
+
+/* Custom TV scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(239, 68, 68, 0.6);
+}

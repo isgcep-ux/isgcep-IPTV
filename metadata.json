@@ -1,0 +1,6 @@
+{
+  "name": "IPTV Player",
+  "description": "Full-featured IPTV & VOD Player with LG webOS Smart TV & Magic Remote support, live .m3u8 (HLS), MPEG-TS, Turkish series & cinema hubs, Netflix & Prime catalogs, EPG timeline, and quad multi-view.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

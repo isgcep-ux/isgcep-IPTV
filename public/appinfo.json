@@ -1,0 +1,23 @@
+{
+  "id": "com.iptv.webos.player",
+  "version": "1.0.0",
+  "vendor": "IPTV Studio",
+  "type": "web",
+  "main": "index.html",
+  "title": "IPTV & VOD Smart TV Player",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "bgImage": "bgImage.png",
+  "splashBackground": "splash.png",
+  "resolution": "1920x1080",
+  "uiRevision": "2",
+  "requiredPermissions": [
+    "networking",
+    "audio.media",
+    "video.media"
+  ],
+  "handlesRelaunch": true,
+  "supportTouch": true,
+  "supportMagicRemote": true,
+  "supportDpad": true
+}
