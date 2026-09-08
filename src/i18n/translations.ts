@@ -168,13 +168,18 @@ export const translations = {
     addChannelsBtn: 'Kanalları Ekle',
     clearCustomChannelsBtn: 'Özel Kanalları Temizle',
 
-    // Voice Search
-    voiceSearch: 'Sesli Arama',
-    voiceListening: 'Dinleniyor... Kanal veya film söyleyin',
+    // Voice Search & Voice Commands
+    voiceSearch: 'Sesli Komut & Arama',
+    voiceListening: 'Dinleniyor... "BBC\'ye geç" veya "Kanal 5" deyin',
     voiceSpeakNow: 'Şimdi Konuşun...',
     voiceNotSupported: 'Tarayıcınız sesli aramayı desteklemiyor.',
     voicePermissionDenied: 'Mikrofon izni verilmedi veya reddedildi.',
     voiceClickToStop: 'Dinlemeyi durdurmak için tıklayın',
+    voiceCommands: 'Sesli Komutlar',
+    voiceCommandExamples: 'Örn: "BBC\'ye geç", "Kanal 5", "TRT 1 aç"',
+    voiceSwitchedTo: 'Kanala geçildi',
+    voiceChannelNotFound: 'Kanal bulunamadı. Aranıyor:',
+    voiceSearching: 'Aranıyor:',
   },
   en: {
     // Header & Navigation
@@ -335,13 +340,18 @@ export const translations = {
     addChannelsBtn: 'Add Channels',
     clearCustomChannelsBtn: 'Clear Custom Channels',
 
-    // Voice Search
-    voiceSearch: 'Voice Search',
-    voiceListening: 'Listening... Speak a channel or movie',
+    // Voice Search & Voice Commands
+    voiceSearch: 'Voice Commands & Search',
+    voiceListening: 'Listening... Say "Switch to BBC" or "Channel 5"',
     voiceSpeakNow: 'Speak now...',
     voiceNotSupported: 'Voice search is not supported in this browser.',
     voicePermissionDenied: 'Microphone permission was denied.',
     voiceClickToStop: 'Click to stop listening',
+    voiceCommands: 'Voice Commands',
+    voiceCommandExamples: 'E.g. "Switch to BBC", "Channel 5", "Play TRT 1"',
+    voiceSwitchedTo: 'Switched to',
+    voiceChannelNotFound: 'Channel not found. Searching:',
+    voiceSearching: 'Searching for:',
   },
   de: {
     liveTv: 'Live TV',
@@ -487,13 +497,18 @@ export const translations = {
     addChannelsBtn: 'Sender hinzufügen',
     clearCustomChannelsBtn: 'Eigene Sender löschen',
 
-    // Voice Search
-    voiceSearch: 'Sprachsuche',
-    voiceListening: 'Zuhören... Bitte Sender oder Film nennen',
+    // Voice Search & Voice Commands
+    voiceSearch: 'Sprachbefehle & Suche',
+    voiceListening: 'Zuhören... Sagen Sie "Schalte auf BBC" oder "Kanal 5"',
     voiceSpeakNow: 'Jetzt sprechen...',
     voiceNotSupported: 'Sprachsuche wird von diesem Browser nicht unterstützt.',
     voicePermissionDenied: 'Mikrofonzugriff wurde verweigert.',
     voiceClickToStop: 'Klicken zum Beenden',
+    voiceCommands: 'Sprachbefehle',
+    voiceCommandExamples: 'Z.B. "Schalte auf BBC", "Kanal 5", "Öffne TRT 1"',
+    voiceSwitchedTo: 'Umgeschaltet auf',
+    voiceChannelNotFound: 'Sender nicht gefunden. Suche nach:',
+    voiceSearching: 'Suche nach:',
   },
   es: {
     liveTv: 'TV en Vivo',
@@ -639,13 +654,18 @@ export const translations = {
     addChannelsBtn: 'Añadir Canales',
     clearCustomChannelsBtn: 'Borrar Canales Propios',
 
-    // Voice Search
-    voiceSearch: 'Búsqueda por Voz',
-    voiceListening: 'Escuchando... Diga un canal o película',
+    // Voice Search & Voice Commands
+    voiceSearch: 'Comandos de Voz & Búsqueda',
+    voiceListening: 'Escuchando... Diga "Cambiar a BBC" o "Canal 5"',
     voiceSpeakNow: 'Hable ahora...',
     voiceNotSupported: 'La búsqueda por voz no es compatible con su navegador.',
     voicePermissionDenied: 'Acceso al micrófono denegado.',
     voiceClickToStop: 'Haga clic para detener',
+    voiceCommands: 'Comandos de Voz',
+    voiceCommandExamples: 'Ej. "Cambiar a BBC", "Canal 5", "Poner TRT 1"',
+    voiceSwitchedTo: 'Cambiado a',
+    voiceChannelNotFound: 'Canal no encontrado. Buscando:',
+    voiceSearching: 'Buscando:',
   },
   fr: {
     liveTv: 'Télé en Direct',
@@ -791,13 +811,18 @@ export const translations = {
     addChannelsBtn: 'Ajouter des Chaînes',
     clearCustomChannelsBtn: 'Effacer les Chaînes Perso',
 
-    // Voice Search
-    voiceSearch: 'Recherche Vocale',
-    voiceListening: 'Écoute en cours... Nommez une chaîne ou un film',
+    // Voice Search & Voice Commands
+    voiceSearch: 'Commandes Vocales & Recherche',
+    voiceListening: 'Écoute... Dites "Passer à BBC" ou "Chaîne 5"',
     voiceSpeakNow: 'Parlez maintenant...',
     voiceNotSupported: 'La recherche vocale n\'est pas prise en charge par ce navigateur.',
     voicePermissionDenied: 'Accès au microphone refusé.',
     voiceClickToStop: 'Cliquez pour arrêter',
+    voiceCommands: 'Commandes Vocales',
+    voiceCommandExamples: 'Ex. "Passer à BBC", "Chaîne 5", "Mettre TRT 1"',
+    voiceSwitchedTo: 'Passé à',
+    voiceChannelNotFound: 'Chaîne non trouvée. Recherche :',
+    voiceSearching: 'Recherche :',
   },
 };
 

@@ -18,7 +18,7 @@ import {
   Settings,
   Globe
 } from 'lucide-react';
-import { MultiViewLayout, SleepTimerState, AppViewMode } from '../types';
+import { MultiViewLayout, SleepTimerState, AppViewMode, Channel } from '../types';
 import { useLanguage } from '../i18n/LanguageContext';
 import { VoiceSearchButton } from './VoiceSearchButton';
 
@@ -42,6 +42,9 @@ interface HeaderProps {
   isAdultUnlocked?: boolean;
   onRequirePin?: () => void;
   onLockAdult?: () => void;
+  channels?: Channel[];
+  onSelectChannel?: (channel: Channel) => void;
+  activeChannel?: Channel | null;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -63,6 +66,9 @@ export const Header: React.FC<HeaderProps> = ({
   isAdultUnlocked = false,
   onRequirePin,
   onLockAdult,
+  channels = [],
+  onSelectChannel,
+  activeChannel,
 }) => {
   const { t, language, availableLanguages } = useLanguage();
   const [showTimerMenu, setShowTimerMenu] = React.useState(false);
@@ -222,6 +228,9 @@ export const Header: React.FC<HeaderProps> = ({
             <VoiceSearchButton
               id="header-voice-search-btn"
               onSearchResult={(spokenText) => onSearchChange(spokenText)}
+              onSelectChannel={onSelectChannel}
+              channels={channels}
+              activeChannel={activeChannel}
               size="sm"
             />
           </div>

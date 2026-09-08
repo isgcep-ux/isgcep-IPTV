@@ -50,7 +50,10 @@ export default function App() {
 
       if (saved) {
         const parsed: Channel[] = JSON.parse(saved);
-        return parsed.map(c => ({
+        const existingIds = new Set(parsed.map(c => c.id));
+        const missingDefaults = DEFAULT_CHANNELS.filter(dc => !existingIds.has(dc.id));
+        const combined = [...parsed, ...missingDefaults];
+        return combined.map(c => ({
           ...c,
           isFavorite: favoriteIds.includes(c.id) || !!c.isFavorite
         }));
@@ -581,6 +584,9 @@ export default function App() {
         isAdultUnlocked={isAdultUnlocked}
         onRequirePin={handleRequirePin}
         onLockAdult={handleLockAdult}
+        channels={channels}
+        onSelectChannel={handleSelectChannel}
+        activeChannel={selectedChannel}
       />
 
       {/* Main Workspace Layout */}

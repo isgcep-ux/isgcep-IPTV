@@ -25,7 +25,7 @@ export const ShortcutsModal: React.FC<ShortcutsModalProps> = ({ isOpen, onClose 
     { key: 'S', desc: 'Capture Broadcast Screenshot' },
     { key: 'D', desc: 'Toggle Stream Diagnostics HUD' },
     { key: '/', desc: 'Focus Quick Channel Search' },
-    { key: '🎙️ Mic', desc: 'Voice Search (Web Speech API)' },
+    { key: '🎙️ Mic', desc: 'Voice Commands & Search (e.g. "Switch to BBC", "Channel 5")' },
     { key: '0 - 9', desc: 'Direct Channel Number Tuning (e.g. 1-0-2)' },
     { key: 'Esc', desc: 'Close Modals / Exit Fullscreen' },
   ];

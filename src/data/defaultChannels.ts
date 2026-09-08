@@ -62,6 +62,21 @@ export const DEFAULT_CHANNELS: Channel[] = [
     isFavorite: true,
     streamType: 'mp4',
   },
+  {
+    id: 'bbc-world-news-hd',
+    number: 5,
+    name: 'BBC World News HD',
+    logo: 'https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=128&h=128&fit=crop&q=80',
+    url: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8',
+    backupUrls: ['https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8'],
+    group: 'News',
+    country: 'UK',
+    language: 'English',
+    tvgId: 'BBCNews.uk',
+    resolution: '1080p HD',
+    isFavorite: true,
+    streamType: 'hls',
+  },
 
   // ── TÜRKİYE ULUSAL VE DİZİ KANALLARI (TURKISH TV) ───────────────
   {

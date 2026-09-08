@@ -288,6 +288,9 @@ export const ChannelSidebar: React.FC<ChannelSidebarProps> = ({
             <VoiceSearchButton
               id="sidebar-voice-search-btn"
               onSearchResult={(spokenText) => setFilterQuery(spokenText)}
+              onSelectChannel={onSelectChannel}
+              channels={channels}
+              activeChannel={selectedChannel}
               size="sm"
             />
           </div>
